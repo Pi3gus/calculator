@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Deseret:700|Noto%20Sans%20Deseret:400');
+:root{
+    --text: #f3f5f0;
+    --background: #10120c;
+    --primary: #bdc6ab;
+    --secondary: #44645a;
+    --accent: #81a2a9;
+}
+
+body {
+    font-family: 'Noto Sans Deseret';
+    font-weight: 400;
+    background-color: var(--background);
+}
