@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Deseret:700|Noto%20Sans%20Deseret:400');
-:root{
-    --text: #f3f5f0;
-    --background: #10120c;
-    --primary: #bdc6ab;
-    --secondary: #44645a;
-    --accent: #81a2a9;
-}
-
 body {
-    font-family: 'Noto Sans Deseret';
-    font-weight: 400;
-    background-color: var(--background);
-}
+    font-family: Arial, sans-serif;
+  }
+.calculator {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+.button:hover {
+    background-color: #ccc;
+  }

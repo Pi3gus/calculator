@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+  <title>Simple Calculator</title>
+  <style>
+    /* Add some basic styling to make the calculator look decent */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  .calculator {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  .button {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  .button:hover {
+      background-color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        
+  <div class="calculator">
+    <input type="text" id="display" value="" readonly>
+    <div class="button-row">
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button data-function="/">/</button>
     </div>
+    <div class="button-row">
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button data-function="*">*</button>
+    </div>
+    <div class="button-row">
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button data-function="-">-</button>
+    </div>
+    <div class="button-row">
+      <button data-number="0">0</button>
+      <button data-function="+">+</button>
+      <button id="equals">=</button>
+      <button id="clear">Clear</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
